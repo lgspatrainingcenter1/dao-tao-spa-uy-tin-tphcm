@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LG Spa Training Center - Đào tạo nghề spa uy tín tại TPHCM | Cam kết việc làm 100%</title>
+    <meta name="description" content="LG Spa Training Center - Trung tâm đào tạo nghề spa uy tín tại TPHCM. Lộ trình học bài bản, thực hành 90%, giảng viên đầu ngành, hỗ trợ toàn diện, cam kết việc làm 100% sau tốt nghiệp.">
+    <meta name="keywords" content="đào tạo spa, học nghề spa, trung tâm spa uy tín, nghề spa TPHCM, việc làm spa, LG Spa Training Center, học spa cam kết việc làm">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lgspatrainingcenter.vn/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* Sidebar Navigation */
+        
+        .sidebar {
+            width: 300px;
+            background: linear-gradient(180deg, #00695c 0%, #004d40 100%);
+            padding: 30px 0;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .sidebar h3 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+            padding: 0 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 15px;
+        }
+        
+        .nav-item {
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 5px 15px;
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 14px;
+            line-height: 1.4;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .nav-item:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-item:hover:before {
+            left: 100%;
+        }
+        
+        .nav-item.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateX(5px);
+        }
+        /* Main Content */
+        
+        .main-content {
+            flex: 1;
+            padding: 40px 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #00695c, #004d40);
+            margin: -40px -50px 50px -50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+        
+        header h1 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-left: 5px solid #00695c;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #00695c, #004d40, #00695c);
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 105, 92, 0.15);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 24px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #00695c, #26a69a);
+            border-radius: 2px;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #444;
+            font-size: 16px;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .section li {
+            margin-bottom: 15px;
+            color: #444;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        .section li:before {
+            content: '✦';
+            color: #00695c;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        .section li b {
+            color: #00695c;
+        }
+        /* Images */
+        
+        img {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #004d40, #00695c);
+            color: white;
+            margin: 50px -50px -40px -50px;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: slide 4s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 10px;
+                border-radius: 15px;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .main-content {
+                padding: 20px 25px;
+            }
+            header {
+                margin: -20px -25px 30px -25px;
+                padding: 30px 20px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            .section {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            footer {
+                margin: 30px -25px -20px -25px;
+                padding: 30px 20px;
+            }
+            img {
+                max-width: 100%;
+                margin: 20px auto;
+            }
+        }
+        /* Scroll behavior */
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Loading animation */
+        
+        .section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .section:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .section:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .section:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        .section:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h3>Mục lục</h3>
+            <a href="#header" class="nav-item active">Trang chủ</a>
+            <a href="#nghe-spa" class="nav-item">Nghề Spa chuyên nghiệp</a>
+            <a href="#tu-con-so-0" class="nav-item">Từ con số 0 đến sự nghiệp</a>
+            <a href="#dao-tao-thuc-chien" class="nav-item">Đào tạo thực chiến</a>
+            <a href="#ho-tro-toan-dien" class="nav-item">Hỗ trợ toàn diện</a>
+            <a href="#cam-ket-viec-lam" class="nav-item">Cam kết việc làm 100%</a>
+        </nav>
+
+        <main class="main-content">
+            <header id="header">
+                <h1><b> <a href="https://lgspatraining.com/">LG Spa Training Center</a> - Hơn cả một nơi học, là nơi bắt đầu hành trình sự nghiệp</b></h1>
+                <p>Nơi đào tạo nghề spa uy tín tại TPHCM, cam kết việc làm 100% sau tốt nghiệp.</p>
+            </header>
+
+            <section class="section" id="nghe-spa">
+                <h2>Nghề Spa chuyên nghiệp - Hướng đi của thế hệ mới</h2>
+                <p>Nhiều người trẻ lựa chọn nghề spa với mong muốn có một công việc ổn định và phát triển. Tuy nhiên, để từ một người chưa có kinh nghiệm trở thành một kỹ thuật viên chuyên nghiệp, một lộ trình bài bản là yếu tố then chốt. LG Spa Training
+                    Center không chỉ là nơi đào tạo nghề, mà còn là bệ phóng vững chắc cho sự nghiệp của bạn.</p>
+                <p>Từ lâu, ngành spa đã vượt qua khuôn khổ của một công việc thủ công đơn thuần. Ngày nay, một kỹ thuật viên spa chuyên nghiệp cần có sự kết hợp của nhiều yếu tố: tay nghề điêu luyện, kiến thức y khoa nền tảng về da liễu và mỹ phẩm, khả năng
+                    thấu hiểu tâm lý khách hàng, cùng sự nhạy bén với các xu hướng làm đẹp hiện đại.</p>
+                <p>Với tốc độ tăng trưởng nhanh chóng, ngành làm đẹp đang mở ra hàng ngàn cơ hội việc làm với mức thu nhập hấp dẫn, biến nghề spa trở thành một lựa chọn thông minh và đầy tiềm năng cho thế hệ trẻ.</p>
+            </section>
+            <img src="images/dao-tao-spa-chuyen-nghiep.jpg" alt="Đào tạo spa chuyên nghiệp">
+
+            <section class="section" id="tu-con-so-0">
+                <h2>Từ con số 0 đến con đường sự nghiệp rõ ràng</h2>
+                <p>Bất kể bạn là người mới hoàn toàn, đang tìm kiếm một cơ hội đổi nghề, hay đã biết làm nhưng muốn nâng cao kỹ thuật - tại LG Spa Training Center, mọi học viên đều có một lộ trình phát triển cá nhân.</p>
+                <p>Khóa học được thiết kế bài bản từ nền tảng cơ bản đến chuyên sâu, giúp bạn từng bước hoàn thiện kỹ năng và tích lũy kinh nghiệm thực tế để sẵn sàng chinh phục thị trường làm đẹp.</p>
+            </section>
+            <img src="images/dao-tao-spa-o-dau.jpg" alt="Đào tạo spa ở đâu">
+
+            <section class="section" id="dao-tao-thuc-chien">
+                <h2>Đào tạo thực chiến - Chìa khóa thành công</h2>
+                <ul>
+                    <li><b>90% Thực hành - 10% Lý thuyết:</b> Học viên được thực hành liên tục với các thiết bị, công nghệ hiện đại trên khách hàng thật, dưới sự kèm cặp của giảng viên nhiều năm kinh nghiệm. Điều này giúp học viên không bỡ ngỡ khi đi làm
+                        và có thể bắt tay ngay vào công việc sau khi tốt nghiệp.</li>
+                    <li><b>Giảng viên là những chuyên gia đầu ngành:</b> Đội ngũ giảng viên là những chuyên gia có nhiều năm kinh nghiệm thực chiến trong lĩnh vực làm đẹp. Họ không chỉ là người truyền đạt kiến thức mà còn là người đồng hành, cầm tay chỉ việc
+                        theo phương pháp 1 kèm 1, đảm bảo mỗi học viên đều thành thạo từng thao tác kỹ thuật nhỏ nhất.</li>
+                    <li><b>Môi trường học tập hiện đại:</b> LG Spa Training Center đầu tư mạnh vào cơ sở vật chất, với phòng thực hành đạt chuẩn spa cao cấp, trang bị đầy đủ các máy móc và công nghệ làm đẹp tiên tiến nhất thị trường. Học viên sẽ được tiếp
+                        xúc và thực hành với công nghệ thực tế ngay trong lớp học, sẵn sàng bắt nhịp với mọi môi trường làm việc chuyên nghiệp.</li>
+                </ul>
+            </section>
+            <img src="images/dao-tao-spa-o-tphcm.jpg" alt="Đào tạo spa ở TPHCM">
+
+            <section class="section" id="ho-tro-toan-dien">
+                <h2>Hỗ trợ toàn diện để học viên an tâm học tập</h2>
+                <p>LG hiểu rằng để phát triển bền vững, học viên cần một môi trường hỗ trợ tốt nhất. Vì vậy, ngoài cơ sở vật chất hiện đại đạt chuẩn spa 5 sao, học viện còn:</p>
+                <ul>
+                    <li>Cung cấp chỗ ở miễn phí tại căn hộ dịch vụ cao cấp, sạch đẹp, tiện nghi.</li>
+                    <li>Miễn phí phương tiện di chuyển hằng ngày.</li>
+                    <li>
+                        <a href="https://lgspatraining.com/chi-phi-hoc-nghe-spa/">Chi phí học nghề spa</a> trọn gói ưu đãi, cam kết không phát sinh.</li>
+                    <li>Tặng toàn bộ bộ đồ nghề và giáo trình độc quyền.</li>
+                </ul>
+            </section>
+            <img src="images/dao-tao-spa-uy-tin.jpg" alt="Đào tạo spa uy tín">
+
+            <section class="section" id="cam-ket-viec-lam">
+                <h2>Cam kết 100% việc làm sau tốt nghiệp</h2>
+                <p>Một trong những nỗi lo lớn nhất của người học nghề là ra trường có việc hay không? Tại LG Spa Training Center, câu trả lời luôn là CÓ. Nhờ trực thuộc hệ thống Viện Thẩm Mỹ LG Clinic với 9 chi nhánh, học viên sau khi tốt nghiệp được bố
+                    trí việc làm ngay mà không mất thời gian chờ đợi hay phải tự đi xin việc.</p>
+                <p>Không chỉ đảm bảo việc làm, LG Spa Training Center còn đem đến mức thu nhập khởi điểm hấp dẫn từ 20 - 30 triệu đồng/tháng, thậm chí cao hơn đối với những học viên có kỹ năng nổi trội. Ngoài lương cứng, nhiều vị trí còn được nhận hoa hồng
+                    và thưởng doanh số, giúp tổng thu nhập hàng tháng tăng đáng kể.</p>
+                <p>Với LG Spa Training Center, mỗi khóa học không chỉ là hành trình học nghề mà là bước khởi đầu cho một tương lai bền vững. Bạn rời lớp học với kỹ năng chuyên môn, sự tự tin, và một công việc ổn định - tất cả sẵn sàng để bạn viết nên câu
+                    chuyện sự nghiệp của riêng mình.</p>
+            </section>
+            <img src="images/dao-tao-spa-uy-tin-o-dau.jpg" alt="Đào tạo spa uy tín ở đâu">
+
+            <footer>
+                <p><b>LG Spa Training Center</b> - Trung tâm đào tạo nghề spa uy tín tại TPHCM | Hotline: 0909 123 456</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // Update active nav item
+                    document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Update active navigation on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section, header');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
